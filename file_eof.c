@@ -11,14 +11,14 @@ int main(void)
 	scanf("%s", fname);
 	fp = fopen(fname, "r");
 
-	if(fp = NULL)
+	if(fp == NULL)
 	{
 		printf("Failed to open file. Bye\n");
 		exit(1);
 	}
 	while((ch = getc(fp)) != EOF)
 	{
-		putchara(ch);
+		putchar(ch);
 	}
 	fclose(fp);
 	return 0;
